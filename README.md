@@ -1,9 +1,9 @@
 # Unidad1Apuntes
 <p>puntes de la unidad 1 de graficación</p>
 # 1.1 Historia y evolución de la graficación por computadora
-La graficación por computadora es una disciplina que combina informática, matemáticas y percepción visual para generar, 
-manipular y representar imágenes mediante sistemas computacionales.
-Su evolución está profundamente ligada al desarrollo del hardware y de los algoritmos matemáticos.
+<p> La graficación por computadora es una disciplina que combina informática, matemáticas y percepción visual para generar, 
+manipular y representar imágenes mediante sistemas computacionales.</p>
+<p></p>Su evolución está profundamente ligada al desarrollo del hardware y de los algoritmos matemáticos.</p>
 📌 Orígenes (1950 – 1960)
 Durante esta etapa, los gráficos eran extremadamente básicos debido a las limitaciones del hardware.
 Características:
