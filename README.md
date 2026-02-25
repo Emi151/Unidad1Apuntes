@@ -52,7 +52,7 @@ Aplicaciones actuales:
 ✔ Visualización científica
 ✔ Motores gráficos en tiempo real
 
-1.2 Áreas de aplicación
+# 1.2 Áreas de aplicación
 La graficación por computadora es transversal a numerosas disciplinas.
 🎮 Videojuegos
 ✔ Renderizado en tiempo real
@@ -77,7 +77,7 @@ La graficación por computadora es transversal a numerosas disciplinas.
 ✔ Simulación científica
 ✔ Interfaces interactivas
 
-1.3 Aspectos matemáticos de la graficación
+# 1.3 Aspectos matemáticos de la graficación
 Las matemáticas son la base conceptual y operativa de toda representación gráfica.
 
 📌 Álgebra Lineal
@@ -117,7 +117,7 @@ Ejemplo de línea:
 Ejemplo:
 Interpolación de curvas Bézier.
 
-1.4 Modelos del color
+# 1.4 Modelos del color
 Los modelos de color describen cómo se representan y combinan los colores.
 🎨 RGB (Modelo Aditivo)
 Basado en luz.
@@ -169,7 +169,7 @@ Modelo clásico:
 ✔ Fill Light → reduce sombras
 ✔ Back Light → separa del fondo
 
-1.5 Representación y trazo de líneas y polígonos
+# 1.5 Representación y trazo de líneas y polígonos
 📏 Representación de líneas
 Una línea se define mediante dos puntos:
 [P_1(x_1, y_1), \quad P_2(x_2, y_2)]
@@ -202,7 +202,7 @@ Métodos:
 ✔ Scanline
 ✔ Flood Fill
 
-1.6 Procesamiento de mapas de bits
+# 1.6 Procesamiento de mapas de bits
 Definición
 Una imagen raster es una matriz de píxeles.
 Cada píxel almacena:
