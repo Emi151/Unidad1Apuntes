@@ -288,12 +288,7 @@ x' = x \cdot s_x,\quad y' = y \cdot s_y
 
 Es girar un objeto respecto a un punto (normalmente el origen).
 
-[
-x' = x\cos\theta - y\sin\theta
-]
-[
-y' = x\sin\theta + y\cos\theta
-]
+<img width="147" height="50" alt="image" src="https://github.com/user-attachments/assets/e31f8969-8576-4ed1-a1d6-8483edb59361" />
 
 📌 Ejemplo: rotar un sprite 90°.
 
@@ -303,15 +298,7 @@ y' = x\sin\theta + y\cos\theta
 
 Deforma el objeto inclinándolo.
 
-* En X:
-  [
-  x' = x + sh_x \cdot y
-  ]
-
-* En Y:
-  [
-  y' = y + sh_y \cdot x
-  ]
+<img width="324" height="112" alt="image" src="https://github.com/user-attachments/assets/e98973f9-d741-4f2c-9158-19197c527a7e" />
 
 📌 Ejemplo: convertir un rectángulo en un paralelogramo.
 
