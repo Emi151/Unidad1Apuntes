@@ -245,3 +245,209 @@ Métodos:
 ✔ Vecino más cercano
 ✔ Bilineal
 ✔ Bicúbica
+
+# Unidad2Apuntes
+
+# **2.1 Transformación bidimensional**
+
+<p>Son operaciones matemáticas que permiten **modificar la posición, tamaño o forma** de objetos en un plano 2D (ejes X y Y).
+Se aplican mucho en animación, videojuegos, interfaces y diseño gráfico.</p>
+
+## **2.1.1 Traslación**
+
+<p>Es el **desplazamiento** de un objeto de un lugar a otro sin cambiar su forma ni tamaño.</p>
+
+* Se mueve en X y en Y.
+* Fórmula:
+  [
+  x' = x + t_x,\quad y' = y + t_y
+  ]
+
+📌 Ejemplo: mover un personaje 5 unidades a la derecha.
+
+---
+
+## **2.1.2 Escalamiento**
+
+Consiste en **cambiar el tamaño** del objeto.
+
+* Puede ser:
+
+  * Uniforme (misma escala en X y Y)
+  * No uniforme (distinta escala)
+
+[
+x' = x \cdot s_x,\quad y' = y \cdot s_y
+]
+
+📌 Ejemplo: agrandar una imagen al doble.
+
+---
+
+## **2.1.3 Rotación**
+
+Es girar un objeto respecto a un punto (normalmente el origen).
+
+[
+x' = x\cos\theta - y\sin\theta
+]
+[
+y' = x\sin\theta + y\cos\theta
+]
+
+📌 Ejemplo: rotar un sprite 90°.
+
+---
+
+## **2.1.4 Sesgado (Shear)**
+
+Deforma el objeto inclinándolo.
+
+* En X:
+  [
+  x' = x + sh_x \cdot y
+  ]
+
+* En Y:
+  [
+  y' = y + sh_y \cdot x
+  ]
+
+📌 Ejemplo: convertir un rectángulo en un paralelogramo.
+
+---
+
+# **2.2 Representación matricial de las transformaciones bidimensionales**
+
+Todas las transformaciones anteriores se pueden representar con **matrices**, lo que facilita combinarlas.
+
+Se usa mucho el sistema de **coordenadas homogéneas** (agregando un 1):
+
+[
+\begin{bmatrix}
+x' \ y' \ 1
+\end{bmatrix}
+=============
+
+\begin{bmatrix}
+a & b & t_x \
+c & d & t_y \
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+x \ y \ 1
+\end{bmatrix}
+]
+
+📌 Ventajas:
+
+* Puedes aplicar varias transformaciones con una sola multiplicación.
+* Es más eficiente en gráficos por computadora.
+
+---
+
+# **2.3 Trazo de líneas curvas**
+
+Permite dibujar curvas suaves en lugar de líneas rectas.
+
+---
+
+## **2.3.1 Bézier**
+
+Son curvas definidas por **puntos de control**.
+
+* Muy usadas en diseño gráfico y animación.
+* Tipos:
+
+  * Lineal (2 puntos)
+  * Cuadrática (3 puntos)
+  * Cúbica (4 puntos)
+
+Fórmula general:
+[
+B(t) = \sum_{i=0}^{n} P_i \cdot B_{i,n}(t)
+]
+
+📌 Características:
+
+* Suavidad
+* Fácil control de forma
+* Usadas en software como Illustrator
+
+---
+
+## **2.3.2 B-spline**
+
+Son una generalización de las curvas Bézier.
+
+📌 Características:
+
+* Más flexibles
+* Mejor control local (mover un punto no afecta toda la curva)
+* Más suaves para modelado complejo
+
+📌 Uso:
+
+* Modelado 3D
+* Animación
+* CAD
+
+---
+
+# **2.4 Fractales**
+
+Son figuras geométricas que se repiten a diferentes escalas (auto-similitud).
+
+📌 Características:
+
+* Infinitos detalles
+* Generados por funciones matemáticas
+* Muy usados en gráficos realistas
+
+📌 Ejemplos:
+
+* Conjunto de Mandelbrot
+* Árboles fractales
+
+📌 Aplicaciones:
+
+* Videojuegos (paisajes)
+* Animaciones
+* Simulación de naturaleza
+
+---
+
+# **2.5 Uso y creación de fuentes de texto**
+
+Se refiere a cómo se representan y diseñan letras en gráficos.
+
+📌 Tipos:
+
+* **Bitmap**: píxeles fijos
+* **Vectoriales**: escalables sin perder calidad
+
+📌 Tecnologías comunes:
+
+* TrueType
+* OpenType
+
+📌 Uso en graficación:
+
+* Interfaces gráficas
+* Videojuegos
+* Diseño UI/UX
+
+📌 Creación:
+
+* Se diseñan con curvas (generalmente Bézier)
+* Se definen puntos, trazos y rellenos
+
+---
+
+# ✨ RESUMEN GENERAL
+
+<p>* Transformaciones → modifican objetos (mover, girar, escalar)</p>
+<p>* Matrices → permiten aplicar transformaciones fácilmente</p>
+<p>* Curvas → generan formas suaves (Bézier y B-spline)</p>
+* Fractales → crean estructuras complejas repetitivas
+* Fuentes → representación gráfica de texto
