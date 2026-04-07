@@ -473,6 +473,10 @@ Se refiere a cómo se representan y diseñan letras en gráficos.
 <p>* Transformaciones → modifican objetos (mover, girar, escalar)</p>
 <p>* Matrices → permiten aplicar transformaciones fácilmente</p>
 <p>* Curvas → generan formas suaves (Bézier y B-spline)</p>
+<p>* Fractales → crean estructuras complejas repetitivas</p>
+<p>* Fuentes → representación gráfica de texto</p>
+
+<img width="2752" height="1536" alt="Graficación 2D" src="https://github.com/user-attachments/assets/0195e079-d294-47ea-b408-64bd2308453a" />
 
 # Referencias
 
@@ -510,6 +514,3 @@ Se refiere a cómo se representan y diseñan letras en gráficos.
   Adobe Systems Incorporated. (2020). *PostScript language reference manual* (3rd ed.). Addison-Wesley.
 
 ---
-
-* Fractales → crean estructuras complejas repetitivas
-* Fuentes → representación gráfica de texto
