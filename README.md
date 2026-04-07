@@ -323,26 +323,51 @@ Todas las transformaciones anteriores se pueden representar con **matrices**, lo
 
 Se usa mucho el sistema de **coordenadas homogéneas** (agregando un 1):
 
-[
-\begin{bmatrix}
-x' \ y' \ 1
-\end{bmatrix}
-=============
-
-\begin{bmatrix}
-a & b & t_x \
-c & d & t_y \
-0 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
-x \ y \ 1
-\end{bmatrix}
-]
+<img width="181" height="67" alt="image" src="https://github.com/user-attachments/assets/1929d250-8354-4806-ad22-ca6ba183edb9" />
 
 📌 Ventajas:
 
 * Puedes aplicar varias transformaciones con una sola multiplicación.
 * Es más eficiente en gráficos por computadora.
+
+<p>Código de control con teclas de dirección</p>
+import bpy
+
+class ModalMoveOperator(bpy.types.Operator):
+    bl_idname = "object.modal_move_operator"
+    bl_label = "Modal Move Operator"
+
+    def modal(self, context, event):
+        obj = bpy.data.objects.get("MiDibujo")
+        
+        if not obj:
+            return {'CANCELLED'}
+
+        if event.value == 'PRESS':
+            # IZQUIERDA / DERECHA (Eje X)
+            if event.type == 'LEFT_ARROW':
+                obj.location.x -= 0.5
+            elif event.type == 'RIGHT_ARROW':
+                obj.location.x += 0.5
+                
+            # ARRIBA / ABAJO (Eje Z - Altura en vista frontal)
+            elif event.type == 'UP_ARROW':
+                obj.location.z += 0.5
+            elif event.type == 'DOWN_ARROW':
+                obj.location.z -= 0.5
+
+            # SALIR
+            elif event.type == 'ESC':
+                return {'FINISHED'}
+
+        return {'RUNNING_MODAL'}
+
+    def invoke(self, context, event):
+        context.window_manager.modal_handler_add(self)
+        return {'RUNNING_MODAL'}
+
+bpy.utils.register_class(ModalMoveOperator)
+bpy.ops.object.modal_move_operator('INVOKE_DEFAULT')
 
 ---
 
@@ -364,6 +389,7 @@ Son curvas definidas por **puntos de control**.
   * Cúbica (4 puntos)
 
 Fórmula general:
+
 <img width="182" height="54" alt="image" src="https://github.com/user-attachments/assets/0bf1d103-4185-4f09-a825-a1747b8ae11b" />
 
 📌 Características:
