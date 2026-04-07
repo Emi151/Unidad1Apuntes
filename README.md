@@ -449,27 +449,44 @@ Se refiere a cómo se representan y diseñan letras en gráficos.
 <p>* Transformaciones → modifican objetos (mover, girar, escalar)</p>
 <p>* Matrices → permiten aplicar transformaciones fácilmente</p>
 <p>* Curvas → generan formas suaves (Bézier y B-spline)</p>
+
+# Referencias
 ---
+
 * Computer Graphics with OpenGL
   Hearn, D., & Baker, M. P. (2014). *Computer graphics with OpenGL* (4th ed.). Pearson.
+
 ---
+
 * Computer Graphics: Principles and Practice
   Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2013). *Computer graphics: Principles and practice* (3rd ed.). Addison-Wesley.
+
 ---
+
 * Interactive Computer Graphics: A Top-Down Approach Using WebGL
   Angel, E., & Shreiner, D. (2015). *Interactive computer graphics: A top-down approach using WebGL* (7th ed.). Addison-Wesley.
+
 ---
+
 * Curves and Surfaces for Computer Graphics
   Salomon, D. (2006). *Curves and surfaces for computer graphics*. Springer.
+
 ---
+
 * The Nature of Code
   Shiffman, D. (2012). *The nature of code: Simulating natural systems with processing*. Nature of Code.
+
 ---
+
 * World Wide Web Consortium
   World Wide Web Consortium (W3C). (2018). *Scalable Vector Graphics (SVG) 2*. [https://www.w3.org/TR/SVG2/](https://www.w3.org/TR/SVG2/)
+
 ---
+
 * Adobe
   Adobe Systems Incorporated. (2020). *PostScript language reference manual* (3rd ed.). Addison-Wesley.
+
 ---
+
 * Fractales → crean estructuras complejas repetitivas
 * Fuentes → representación gráfica de texto
