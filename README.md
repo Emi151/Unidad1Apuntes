@@ -364,9 +364,7 @@ Son curvas definidas por **puntos de control**.
   * Cúbica (4 puntos)
 
 Fórmula general:
-[
-B(t) = \sum_{i=0}^{n} P_i \cdot B_{i,n}(t)
-]
+<img width="182" height="54" alt="image" src="https://github.com/user-attachments/assets/0bf1d103-4185-4f09-a825-a1747b8ae11b" />
 
 📌 Características:
 
@@ -451,7 +449,6 @@ Se refiere a cómo se representan y diseñan letras en gráficos.
 <p>* Curvas → generan formas suaves (Bézier y B-spline)</p>
 
 # Referencias
----
 
 * Computer Graphics with OpenGL
   Hearn, D., & Baker, M. P. (2014). *Computer graphics with OpenGL* (4th ed.). Pearson.
